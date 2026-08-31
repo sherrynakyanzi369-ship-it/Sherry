@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#fff0e4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#ff862f" stop-opacity="0.35"/><stop offset="1" stop-color="#ff862f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  
+  <circle cx="200" cy="215" r="150" fill="url(#glow)"/>
+  <g>
+    <rect x="176" y="70" width="48" height="34" rx="6" fill="undefined"/>
+    <rect x="184" y="104" width="32" height="26" fill="undefined" opacity="0.85"/>
+    <path d="M140 130 h120 a18 18 0 0 1 18 18 v210 a24 24 0 0 1 -24 24 h-108 a24 24 0 0 1 -24 -24 v-210 a18 18 0 0 1 18 -18 z" fill="undefined" opacity="0.16" stroke="undefined" stroke-width="3"/>
+    <path d="M146 138 h30 v236 h-22 a12 12 0 0 1 -12 -12 z" fill="#ffffff" opacity="0.55"/>
+    <rect x="158" y="196" width="84" height="96" rx="10" fill="undefined"/>
+    <text x="200" y="232" text-anchor="middle" font-family="Georgia, serif" font-size="17" fill="undefined" letter-spacing="2">SHERRIEZ</text>
+    <text x="200" y="256" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="13" fill="undefined">Golden Hour</text>
+    <rect x="140" y="352" width="120" height="8" rx="4" fill="undefined"/>
+  </g>
+  <circle cx="60" cy="120" r="5" fill="undefined" opacity="0.16"/><circle cx="320" cy="90" r="3" fill="undefined" opacity="0.23"/><circle cx="90" cy="300" r="2" fill="undefined" opacity="0.30"/><circle cx="330" cy="260" r="5" fill="undefined" opacity="0.37"/><circle cx="150" cy="80" r="3" fill="undefined" opacity="0.16"/><circle cx="260" cy="340" r="2" fill="undefined" opacity="0.23"/><circle cx="70" cy="420" r="5" fill="undefined" opacity="0.30"/><circle cx="340" cy="400" r="3" fill="undefined" opacity="0.37"/><circle cx="200" cy="60" r="2" fill="undefined" opacity="0.16"/><circle cx="110" cy="180" r="5" fill="undefined" opacity="0.23"/><circle cx="290" cy="170" r="3" fill="undefined" opacity="0.30"/><circle cx="170" cy="380" r="2" fill="undefined" opacity="0.37"/><circle cx="240" cy="240" r="5" fill="undefined" opacity="0.16"/><circle cx="310" cy="330" r="3" fill="undefined" opacity="0.23"/>
+</svg>

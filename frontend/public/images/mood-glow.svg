@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#fff0e4"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#ff862f" stop-opacity="0.35"/><stop offset="1" stop-color="#ff862f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)"/>
+  
+  <circle cx="200" cy="220" r="160" fill="url(#glow)"/>
+  <path d="M60 430 C 120 360, 90 300, 160 250 S 260 180, 240 110" fill="none" stroke="undefined" stroke-width="3" stroke-linecap="round" opacity="0.65"/>
+  <path d="M100 440 C 170 380, 150 320, 220 260 S 300 200, 290 130" fill="none" stroke="undefined" stroke-width="5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M40 400 C 90 350, 70 280, 130 220" fill="none" stroke="undefined" stroke-width="1.6" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="60" cy="120" r="5" fill="undefined" opacity="0.16"/><circle cx="320" cy="90" r="3" fill="undefined" opacity="0.23"/><circle cx="90" cy="300" r="2" fill="undefined" opacity="0.30"/><circle cx="330" cy="260" r="5" fill="undefined" opacity="0.37"/><circle cx="150" cy="80" r="3" fill="undefined" opacity="0.16"/><circle cx="260" cy="340" r="2" fill="undefined" opacity="0.23"/><circle cx="70" cy="420" r="5" fill="undefined" opacity="0.30"/><circle cx="340" cy="400" r="3" fill="undefined" opacity="0.37"/><circle cx="200" cy="60" r="2" fill="undefined" opacity="0.16"/><circle cx="110" cy="180" r="5" fill="undefined" opacity="0.23"/><circle cx="290" cy="170" r="3" fill="undefined" opacity="0.30"/><circle cx="170" cy="380" r="2" fill="undefined" opacity="0.37"/><circle cx="240" cy="240" r="5" fill="undefined" opacity="0.16"/><circle cx="310" cy="330" r="3" fill="undefined" opacity="0.23"/>
+  <text x="200" y="472" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="15" fill="undefined" opacity="0.75">the art of scent</text>
+</svg>

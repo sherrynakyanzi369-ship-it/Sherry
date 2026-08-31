@@ -1,0 +1,1507 @@
+{
+  "meta": {
+    "seedVersion": 1,
+    "secret": "891c805aca5f9de5997277f4408a38c5ffef4acc3957a8a6197f19d779f15812",
+    "counters": {
+      "users": 2,
+      "products": 22,
+      "reviews": 9,
+      "coupons": 3,
+      "banners": 3,
+      "subscribers": 1,
+      "orders": 1
+    }
+  },
+  "users": [
+    {
+      "id": 1,
+      "name": "Store Administrator",
+      "email": "admin@sherriezscents.com",
+      "role": "admin",
+      "passwordHash": "732cd62124ec7c1a457f7e909e88fdd5:98838ed343cf7e6d5383e6a7289f22c9d7e1e3cc8f3b2f77df75273f8ad38772463ccabada019454daf8d8602689f65b991904775fd380921287f12af7d78429",
+      "addresses": [],
+      "createdAt": "2026-08-31T16:18:11.986Z"
+    },
+    {
+      "id": 2,
+      "name": "End Test",
+      "email": "endtest@example.com",
+      "role": "customer",
+      "passwordHash": "c4da1e8a4035f0a0add535b04ca26e91:e08b72868914320976dad6594ecd9cd572ff82ae50f586020b399ca8193497fd286443b6981b612548cb269ac3b129823733ddf2f82bfb82153d8df1295a620b",
+      "addresses": [],
+      "createdAt": "2026-08-31T16:18:21.069Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "slug": "signature-scent",
+      "name": "Signature Scent",
+      "brand": "Sherriez",
+      "category": "women",
+      "type": "eau-de-parfum",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "A radiant white-floral signature with a warm amber drydown.",
+      "description": "Signature Scent opens with luminous bergamot and pear before unfolding into a heart of jasmine and orange blossom. A base of amber and soft musk leaves an unforgettable trail that lingers from morning to evening.",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Pear"
+        ],
+        "middle": [
+          "Jasmine",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Amber",
+          "White Musk"
+        ]
+      },
+      "price": 49.99,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 1.jpg",
+        "/images/mood-glow.svg"
+      ],
+      "variants": [
+        {
+          "sku": "SIG-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 24
+        },
+        {
+          "sku": "SIG-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 17
+        },
+        {
+          "sku": "SIG-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 10
+        }
+      ],
+      "rating": 4.8,
+      "reviewCount": 2,
+      "badges": [],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 320,
+      "active": true
+    },
+    {
+      "id": 2,
+      "slug": "luxury-essence",
+      "name": "Luxury Essence",
+      "brand": "Sherriez",
+      "category": "unisex",
+      "type": "eau-de-parfum",
+      "audience": "unisex",
+      "family": "amber",
+      "shortDescription": "Opulent amber and oud wrapped in vanilla warmth.",
+      "description": "Luxury Essence is a statement fragrance for those who enter a room and own it. Smoky oud and resinous amber are softened by Madagascan vanilla and a whisper of rose for a composition that is rich, magnetic and long-lasting.",
+      "notes": {
+        "top": [
+          "Saffron",
+          "Rose"
+        ],
+        "middle": [
+          "Oud",
+          "Amber"
+        ],
+        "base": [
+          "Vanilla",
+          "Sandalwood"
+        ]
+      },
+      "price": 59.99,
+      "salePrice": 49.99,
+      "images": [
+        "/images/Perfume 2.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "LUX-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 15
+        },
+        {
+          "sku": "LUX-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 20
+        },
+        {
+          "sku": "LUX-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 8
+        }
+      ],
+      "rating": 4.7,
+      "reviewCount": 1,
+      "badges": [
+        "Save $10"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 410,
+      "active": true
+    },
+    {
+      "id": 3,
+      "slug": "ocean-breeze",
+      "name": "Ocean Breeze",
+      "brand": "Sherriez",
+      "category": "unisex",
+      "type": "eau-de-toilette",
+      "audience": "unisex",
+      "family": "aquatic",
+      "shortDescription": "Sea-salt freshness with driftwood calm.",
+      "description": "Ocean Breeze captures the first light of dawn on the coastline. Cool marine accords and sea salt glide over driftwood and musk for a clean, effortless scent made for everyday wear.",
+      "notes": {
+        "top": [
+          "Marine Accord",
+          "Lemon Zest"
+        ],
+        "middle": [
+          "Sea Salt",
+          "Lavender"
+        ],
+        "base": [
+          "Driftwood",
+          "Musk"
+        ]
+      },
+      "price": 39.99,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 3.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "OCN-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 22
+        },
+        {
+          "sku": "OCN-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 16
+        },
+        {
+          "sku": "OCN-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 12
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 1,
+      "badges": [],
+      "featured": true,
+      "isNew": true,
+      "bestSeller": false,
+      "soldCount": 180,
+      "active": true
+    },
+    {
+      "id": 4,
+      "slug": "midnight-bloom",
+      "name": "Midnight Bloom",
+      "brand": "Sherriez",
+      "category": "women",
+      "type": "eau-de-parfum",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "Night-blooming florals with dark plum and velvet woods.",
+      "description": "Midnight Bloom is the flower that only opens after dusk. Juicy plum and blackcurrant melt into night jasmine and tuberose, settling onto velvet sandalwood — mysterious, feminine and unforgettable.",
+      "notes": {
+        "top": [
+          "Plum",
+          "Blackcurrant"
+        ],
+        "middle": [
+          "Night Jasmine",
+          "Tuberose"
+        ],
+        "base": [
+          "Sandalwood",
+          "Patchouli"
+        ]
+      },
+      "price": 64.99,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 5.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "MID-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 18
+        },
+        {
+          "sku": "MID-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 14
+        },
+        {
+          "sku": "MID-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 9
+        }
+      ],
+      "rating": 4.9,
+      "reviewCount": 1,
+      "badges": [
+        "Best Seller"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 520,
+      "active": true
+    },
+    {
+      "id": 5,
+      "slug": "velvet-rose-oil",
+      "name": "Velvet Rose Oil",
+      "brand": "Sherriez Atelier",
+      "category": "perfume-oils",
+      "type": "perfume-oil",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "Alcohol-free Taif rose oil that melts into skin.",
+      "description": "A pure perfume oil distilled from Taif roses, softened with creamy musk. Applied to pulse points it blooms slowly with your body heat for an intimate, close-to-the-skin scent that lasts all day.",
+      "notes": {
+        "top": [
+          "Rose Petals"
+        ],
+        "middle": [
+          "Taif Rose",
+          "Geranium"
+        ],
+        "base": [
+          "Creamy Musk",
+          "Cedar"
+        ]
+      },
+      "price": 22.99,
+      "salePrice": null,
+      "images": [
+        "/images/oil-rose.svg"
+      ],
+      "variants": [
+        {
+          "sku": "VRO-10",
+          "size": "10 ml roll-on",
+          "priceDelta": 0,
+          "stock": 30
+        },
+        {
+          "sku": "VRO-25",
+          "size": "25 ml bottle",
+          "priceDelta": 12,
+          "stock": 18
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 0,
+      "badges": [
+        "Alcohol Free"
+      ],
+      "featured": false,
+      "isNew": true,
+      "bestSeller": false,
+      "soldCount": 95,
+      "active": true
+    },
+    {
+      "id": 6,
+      "slug": "oud-royale-oil",
+      "name": "Oud Royale Oil",
+      "brand": "Sherriez Atelier",
+      "category": "perfume-oils",
+      "type": "perfume-oil",
+      "audience": "men",
+      "family": "woody",
+      "shortDescription": "Cambodian oud aged and polished with leather.",
+      "description": "Oud Royale is our most precious oil: genuine Cambodian oud aged for depth, polished with saffron and a touch of soft leather. One drop is enough — this is fragrance as jewellery.",
+      "notes": {
+        "top": [
+          "Saffron"
+        ],
+        "middle": [
+          "Cambodian Oud",
+          "Leather"
+        ],
+        "base": [
+          "Amberwood",
+          "Tonka"
+        ]
+      },
+      "price": 34.99,
+      "salePrice": 29.99,
+      "images": [
+        "/images/oil-oud.svg"
+      ],
+      "variants": [
+        {
+          "sku": "OURO-10",
+          "size": "10 ml roll-on",
+          "priceDelta": 0,
+          "stock": 26
+        },
+        {
+          "sku": "OURO-25",
+          "size": "25 ml bottle",
+          "priceDelta": 12,
+          "stock": 14
+        }
+      ],
+      "rating": 4.8,
+      "reviewCount": 1,
+      "badges": [
+        "Save $5"
+      ],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 260,
+      "active": true
+    },
+    {
+      "id": 7,
+      "slug": "citrus-mist-body-spray",
+      "name": "Citrus Mist Body Spray",
+      "brand": "Sherriez Daily",
+      "category": "body-sprays",
+      "type": "body-spray",
+      "audience": "unisex",
+      "family": "citrus",
+      "shortDescription": "A burst of Sicilian lemon and grapefruit for instant uplift.",
+      "description": "Citrus Mist is sunshine in a bottle. Sparkling lemon, bitter grapefruit and a hint of mint refresh the skin any time of day. Light enough to reapply, bright enough to be noticed.",
+      "notes": {
+        "top": [
+          "Sicilian Lemon",
+          "Grapefruit"
+        ],
+        "middle": [
+          "Mint",
+          "Green Leaves"
+        ],
+        "base": [
+          "White Cedar"
+        ]
+      },
+      "price": 12.99,
+      "salePrice": null,
+      "images": [
+        "/images/spray-citrus.svg"
+      ],
+      "variants": [
+        {
+          "sku": "CIM-150",
+          "size": "150 ml",
+          "priceDelta": 0,
+          "stock": 40
+        },
+        {
+          "sku": "CIM-250",
+          "size": "250 ml",
+          "priceDelta": 6,
+          "stock": 25
+        }
+      ],
+      "rating": 4.4,
+      "reviewCount": 0,
+      "badges": [],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 210,
+      "active": true
+    },
+    {
+      "id": 8,
+      "slug": "lavender-dusk-body-spray",
+      "name": "Lavender Dusk Body Spray",
+      "brand": "Sherriez Daily",
+      "category": "body-sprays",
+      "type": "body-spray",
+      "audience": "women",
+      "family": "fresh",
+      "shortDescription": "Calming lavender and soft cotton for quiet evenings.",
+      "description": "Wind down with Lavender Dusk: French lavender folded into cotton blossom and a lullaby of soft vanilla. The gentle mist is kind to skin and perfect for pillow-side spritzing.",
+      "notes": {
+        "top": [
+          "French Lavender"
+        ],
+        "middle": [
+          "Cotton Blossom"
+        ],
+        "base": [
+          "Soft Vanilla"
+        ]
+      },
+      "price": 11.99,
+      "salePrice": null,
+      "images": [
+        "/images/spray-lavender.svg"
+      ],
+      "variants": [
+        {
+          "sku": "LAV-150",
+          "size": "150 ml",
+          "priceDelta": 0,
+          "stock": 35
+        },
+        {
+          "sku": "LAV-250",
+          "size": "250 ml",
+          "priceDelta": 6,
+          "stock": 20
+        }
+      ],
+      "rating": 4.3,
+      "reviewCount": 0,
+      "badges": [],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 140,
+      "active": true
+    },
+    {
+      "id": 9,
+      "slug": "amber-ember",
+      "name": "Amber Ember",
+      "brand": "Sherriez",
+      "category": "men",
+      "type": "eau-de-parfum",
+      "audience": "men",
+      "family": "spicy",
+      "shortDescription": "Smouldering spices over molten amber.",
+      "description": "Amber Ember ignites with pink pepper and cardamom before smouldering into labdanum, amber and smoked woods. Bold yet refined — built for cool evenings and warm entrances.",
+      "notes": {
+        "top": [
+          "Pink Pepper",
+          "Cardamom"
+        ],
+        "middle": [
+          "Labdanum",
+          "Cinnamon"
+        ],
+        "base": [
+          "Amber",
+          "Smoked Cedar"
+        ]
+      },
+      "price": 54.99,
+      "salePrice": null,
+      "images": [
+        "/images/edp-ember.svg"
+      ],
+      "variants": [
+        {
+          "sku": "AMB-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 20
+        },
+        {
+          "sku": "AMB-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 17
+        },
+        {
+          "sku": "AMB-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 7
+        }
+      ],
+      "rating": 4.7,
+      "reviewCount": 1,
+      "badges": [],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 175,
+      "active": true
+    },
+    {
+      "id": 10,
+      "slug": "cedar-trail",
+      "name": "Cedar Trail",
+      "brand": "Sherriez",
+      "category": "men",
+      "type": "eau-de-toilette",
+      "audience": "men",
+      "family": "woody",
+      "shortDescription": "Crisp cedarwood and vetiver for the modern explorer.",
+      "description": "Cedar Trail walks the line between city and wild: aromatic cypress and crisp cedar grounded by earthy vetiver. Dependable, versatile and quietly confident.",
+      "notes": {
+        "top": [
+          "Cypress",
+          "Bergamot"
+        ],
+        "middle": [
+          "Cedarwood",
+          "Juniper"
+        ],
+        "base": [
+          "Vetiver",
+          "Moss"
+        ]
+      },
+      "price": 44.99,
+      "salePrice": null,
+      "images": [
+        "/images/edp-cedar.svg"
+      ],
+      "variants": [
+        {
+          "sku": "CED-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 25
+        },
+        {
+          "sku": "CED-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 19
+        },
+        {
+          "sku": "CED-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 11
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "badges": [],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 130,
+      "active": true
+    },
+    {
+      "id": 11,
+      "slug": "golden-hour",
+      "name": "Golden Hour",
+      "brand": "Sherriez",
+      "category": "women",
+      "type": "eau-de-parfum",
+      "audience": "women",
+      "family": "fruity",
+      "shortDescription": "Sun-warmed peach and mango with a floral glow.",
+      "description": "Golden Hour bottles the last light of a perfect afternoon: ripe peach, juicy mango and neroli glowing over tonka and benzoin. Radiant, joyful and impossible to ignore.",
+      "notes": {
+        "top": [
+          "Peach",
+          "Mango"
+        ],
+        "middle": [
+          "Neroli",
+          "Freesia"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Benzoin"
+        ]
+      },
+      "price": 58,
+      "salePrice": null,
+      "images": [
+        "/images/edp-golden.svg"
+      ],
+      "variants": [
+        {
+          "sku": "GLD-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 21
+        },
+        {
+          "sku": "GLD-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 15
+        },
+        {
+          "sku": "GLD-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 8
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 0,
+      "badges": [
+        "New"
+      ],
+      "featured": false,
+      "isNew": true,
+      "bestSeller": false,
+      "soldCount": 88,
+      "active": true
+    },
+    {
+      "id": 12,
+      "slug": "aqua-pulse",
+      "name": "Aqua Pulse",
+      "brand": "Sherriez",
+      "category": "men",
+      "type": "eau-de-toilette",
+      "audience": "men",
+      "family": "aquatic",
+      "shortDescription": "Cold-water energy with ginger and blue sage.",
+      "description": "Aqua Pulse hits like a plunge pool: icy marine notes spiked with ginger and blue sage, drying down to clean ambergris. Your post-gym, pre-anything signature.",
+      "notes": {
+        "top": [
+          "Marine Notes",
+          "Ginger"
+        ],
+        "middle": [
+          "Blue Sage",
+          "Melon"
+        ],
+        "base": [
+          "Ambergris",
+          "Musk"
+        ]
+      },
+      "price": 42.99,
+      "salePrice": 36.99,
+      "images": [
+        "/images/edp-aqua.svg"
+      ],
+      "variants": [
+        {
+          "sku": "AQP-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 23
+        },
+        {
+          "sku": "AQP-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 18
+        },
+        {
+          "sku": "AQP-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 10
+        }
+      ],
+      "rating": 4.4,
+      "reviewCount": 1,
+      "badges": [
+        "Save $6"
+      ],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 160,
+      "active": true
+    },
+    {
+      "id": 13,
+      "slug": "musk-habibi-oil",
+      "name": "Musk Habibi Oil",
+      "brand": "Sherriez Atelier",
+      "category": "perfume-oils",
+      "type": "perfume-oil",
+      "audience": "unisex",
+      "family": "musk",
+      "shortDescription": "Silky white musk with dates and warm skin.",
+      "description": "Musk Habibi is comfort rendered in fragrance: pillowy white musk sweetened by date fruit and a trail of ambrette seed. Unisex, addictive, and beautiful layered over any other Sherriez scent.",
+      "notes": {
+        "top": [
+          "Ambrette Seed"
+        ],
+        "middle": [
+          "White Musk",
+          "Date Fruit"
+        ],
+        "base": [
+          "Sandalwood",
+          "Vanilla Husk"
+        ]
+      },
+      "price": 27.5,
+      "salePrice": null,
+      "images": [
+        "/images/oil-musk.svg"
+      ],
+      "variants": [
+        {
+          "sku": "MUH-10",
+          "size": "10 ml roll-on",
+          "priceDelta": 0,
+          "stock": 28
+        },
+        {
+          "sku": "MUH-25",
+          "size": "25 ml bottle",
+          "priceDelta": 12,
+          "stock": 16
+        }
+      ],
+      "rating": 4.7,
+      "reviewCount": 0,
+      "badges": [
+        "Layering Favourite"
+      ],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 240,
+      "active": true
+    },
+    {
+      "id": 14,
+      "slug": "spiced-amber-gift-set",
+      "name": "Spiced Amber Gift Set",
+      "brand": "Sherriez Collections",
+      "category": "gift-sets",
+      "type": "gift-set",
+      "audience": "unisex",
+      "family": "spicy",
+      "shortDescription": "Amber Ember EDP 50ml + body spray + travel oil in a keepsake box.",
+      "description": "The complete Amber Ember ritual: a 50 ml eau de parfum, matching body spray and a 10 ml travel perfume oil nested in a magnetic keepsake box tied with ribbon. Ready to gift, no wrapping needed.",
+      "notes": {
+        "top": [
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Cinnamon",
+          "Labdanum"
+        ],
+        "base": [
+          "Amber",
+          "Cedar"
+        ]
+      },
+      "price": 79.99,
+      "salePrice": null,
+      "images": [
+        "/images/gift-spice.svg"
+      ],
+      "variants": [
+        {
+          "sku": "SPG-std",
+          "size": "Standard set",
+          "priceDelta": 0,
+          "stock": 14
+        }
+      ],
+      "rating": 4.9,
+      "reviewCount": 1,
+      "badges": [
+        "Gift Ready"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 190,
+      "active": true
+    },
+    {
+      "id": 15,
+      "slug": "discovery-trio-set",
+      "name": "Discovery Trio Set",
+      "brand": "Sherriez Collections",
+      "category": "gift-sets",
+      "type": "gift-set",
+      "audience": "unisex",
+      "family": "floral",
+      "shortDescription": "Three 10 ml travel sprays: Signature, Ocean Breeze & Golden Hour.",
+      "description": "Can’t pick one? Try three. The Discovery Trio holds 10 ml travel sprays of Signature Scent, Ocean Breeze and Golden Hour in a slim gift sleeve — the smartest way to find your signature.",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Lemon"
+        ],
+        "middle": [
+          "Jasmine",
+          "Marine Accord"
+        ],
+        "base": [
+          "Amber",
+          "Musk"
+        ]
+      },
+      "price": 45,
+      "salePrice": null,
+      "images": [
+        "/images/gift-trio.svg"
+      ],
+      "variants": [
+        {
+          "sku": "DTR-std",
+          "size": "Standard set",
+          "priceDelta": 0,
+          "stock": 30
+        }
+      ],
+      "rating": 4.7,
+      "reviewCount": 0,
+      "badges": [
+        "New",
+        "Best Value"
+      ],
+      "featured": false,
+      "isNew": true,
+      "bestSeller": true,
+      "soldCount": 230,
+      "active": true
+    },
+    {
+      "id": 16,
+      "slug": "white-petal-mist",
+      "name": "White Petal Mist",
+      "brand": "Sherriez Daily",
+      "category": "body-sprays",
+      "type": "body-spray",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "Fresh-cut petals and dew for everyday softness.",
+      "description": "White Petal Mist is a just-picked bouquet: peony, lily and dewy greens in a featherlight body spray. Kind to skin, easy to love, effortless to wear every single day.",
+      "notes": {
+        "top": [
+          "Dew Greens"
+        ],
+        "middle": [
+          "Peony",
+          "Lily"
+        ],
+        "base": [
+          "Soft Musk"
+        ]
+      },
+      "price": 13.5,
+      "salePrice": null,
+      "images": [
+        "/images/spray-petal.svg"
+      ],
+      "variants": [
+        {
+          "sku": "WPM-150",
+          "size": "150 ml",
+          "priceDelta": 0,
+          "stock": 38
+        },
+        {
+          "sku": "WPM-250",
+          "size": "250 ml",
+          "priceDelta": 6,
+          "stock": 22
+        }
+      ],
+      "rating": 4.5,
+      "reviewCount": 0,
+      "badges": [],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 120,
+      "active": true
+    },
+    {
+      "id": 17,
+      "slug": "noir-intense",
+      "name": "Noir Intense",
+      "brand": "Sherriez Privé",
+      "category": "men",
+      "type": "eau-de-parfum",
+      "audience": "men",
+      "family": "oriental",
+      "shortDescription": "Black orchid, incense and dark chocolate for evening power.",
+      "description": "Noir Intense is our private-label statement piece: black orchid and smouldering incense poured over dark chocolate and patchouli. Two sprays are plenty — this one fills the room.",
+      "notes": {
+        "top": [
+          "Black Orchid"
+        ],
+        "middle": [
+          "Incense",
+          "Cacao"
+        ],
+        "base": [
+          "Patchouli",
+          "Dark Woods"
+        ]
+      },
+      "price": 69.99,
+      "salePrice": null,
+      "images": [
+        "/images/edp-noir.svg"
+      ],
+      "variants": [
+        {
+          "sku": "NOI-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 16
+        },
+        {
+          "sku": "NOI-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 12
+        },
+        {
+          "sku": "NOI-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 6
+        }
+      ],
+      "rating": 4.8,
+      "reviewCount": 0,
+      "badges": [
+        "Privé"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 85,
+      "active": true
+    },
+    {
+      "id": 18,
+      "slug": "blossom-duo-set",
+      "name": "Blossom Duo Set",
+      "brand": "Sherriez Collections",
+      "category": "gift-sets",
+      "type": "gift-set",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "Midnight Bloom 50ml + Velvet Rose oil in a floral keepsake box.",
+      "description": "A love letter in a box: Midnight Bloom eau de parfum paired with our alcohol-free Velvet Rose oil. Layer them together for a deeper, longer-lasting bloom she will adore.",
+      "notes": {
+        "top": [
+          "Plum"
+        ],
+        "middle": [
+          "Night Jasmine",
+          "Taif Rose"
+        ],
+        "base": [
+          "Sandalwood",
+          "Musk"
+        ]
+      },
+      "price": 55,
+      "salePrice": 47.5,
+      "images": [
+        "/images/gift-blossom.svg"
+      ],
+      "variants": [
+        {
+          "sku": "BLD-std",
+          "size": "Standard set",
+          "priceDelta": 0,
+          "stock": 18
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 0,
+      "badges": [
+        "Save $7.50"
+      ],
+      "featured": false,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 105,
+      "active": true
+    },
+    {
+      "id": 19,
+      "slug": "rosie",
+      "name": "Rosie",
+      "brand": "Sherriez",
+      "category": "women",
+      "type": "eau-de-parfum",
+      "audience": "women",
+      "family": "floral",
+      "shortDescription": "Floral & Fresh — a radiant bouquet of pink petals and morning dew.",
+      "description": "Rosie captures the first bloom of a dewy garden at sunrise. Soft peony and fresh-cut roses dance over a heart of lily of the valley, settling into a clean white musk base. Feminine, joyful, and utterly addictive.",
+      "notes": {
+        "top": [
+          "Peony",
+          "Pink Pepper"
+        ],
+        "middle": [
+          "Rose",
+          "Lily of the Valley"
+        ],
+        "base": [
+          "White Musk",
+          "Cedar"
+        ]
+      },
+      "price": 44,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 1.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "ROS-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 20
+        },
+        {
+          "sku": "ROS-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 16
+        },
+        {
+          "sku": "ROS-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 10
+        }
+      ],
+      "rating": 4.7,
+      "reviewCount": 2,
+      "badges": [
+        "Floral & Fresh"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 380,
+      "active": true
+    },
+    {
+      "id": 20,
+      "slug": "noir-velvet",
+      "name": "Noir Velvet",
+      "brand": "Sherriez",
+      "category": "men",
+      "type": "eau-de-parfum",
+      "audience": "men",
+      "family": "woody",
+      "shortDescription": "Woody & Spicy — dark oud, black leather and smoky vetiver.",
+      "description": "Noir Velvet is the essence of midnight confidence. Black oud and saffron open with intensity, melting into smoked leather and dark vetiver. A commanding signature for men who own every room.",
+      "notes": {
+        "top": [
+          "Saffron",
+          "Black Pepper"
+        ],
+        "middle": [
+          "Oud",
+          "Leather"
+        ],
+        "base": [
+          "Vetiver",
+          "Dark Amber"
+        ]
+      },
+      "price": 48,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 2.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "NRV-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 18
+        },
+        {
+          "sku": "NRV-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 14
+        },
+        {
+          "sku": "NRV-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 8
+        }
+      ],
+      "rating": 4.8,
+      "reviewCount": 1,
+      "badges": [
+        "Woody & Spicy"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 420,
+      "active": true
+    },
+    {
+      "id": 21,
+      "slug": "luna-muse",
+      "name": "Luna Muse",
+      "brand": "Sherriez",
+      "category": "unisex",
+      "type": "eau-de-parfum",
+      "audience": "unisex",
+      "family": "fruity",
+      "shortDescription": "Fruity & Elegant — night-blooming jasmine with blackcurrant and plum.",
+      "description": "Luna Muse enchants with the mystery of moonlit gardens. Juicy blackcurrant and ripe plum melt into night jasmine and iris, resting on a pillow of tonka and skin musk. Elegant, radiant, unforgettable.",
+      "notes": {
+        "top": [
+          "Blackcurrant",
+          "Plum"
+        ],
+        "middle": [
+          "Night Jasmine",
+          "Iris"
+        ],
+        "base": [
+          "Tonka Bean",
+          "Skin Musk"
+        ]
+      },
+      "price": 59,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 3.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "LUN-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 22
+        },
+        {
+          "sku": "LUN-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 18
+        },
+        {
+          "sku": "LUN-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 10
+        }
+      ],
+      "rating": 4.9,
+      "reviewCount": 1,
+      "badges": [
+        "Fruity & Elegant"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": true,
+      "soldCount": 310,
+      "active": true
+    },
+    {
+      "id": 22,
+      "slug": "solar-bloom",
+      "name": "Solar Bloom",
+      "brand": "Sherriez",
+      "category": "women",
+      "type": "eau-de-parfum",
+      "audience": "women",
+      "family": "citrus",
+      "shortDescription": "Citrus & Fresh — Sicilian bergamot, neroli and warm amber.",
+      "description": "Solar Bloom radiates like golden sunlight on bare skin. Sparkling bergamot and neroli illuminate a heart of white florals, drying down to warm amber and sandalwood. Fresh, luminous, and effortlessly chic.",
+      "notes": {
+        "top": [
+          "Bergamot",
+          "Neroli"
+        ],
+        "middle": [
+          "White Florals",
+          "Orange Blossom"
+        ],
+        "base": [
+          "Amber",
+          "Sandalwood"
+        ]
+      },
+      "price": 36,
+      "salePrice": null,
+      "images": [
+        "/images/Perfume 5.jpg"
+      ],
+      "variants": [
+        {
+          "sku": "SLB-30",
+          "size": "30 ml",
+          "priceDelta": 0,
+          "stock": 25
+        },
+        {
+          "sku": "SLB-50",
+          "size": "50 ml",
+          "priceDelta": 15,
+          "stock": 20
+        },
+        {
+          "sku": "SLB-100",
+          "size": "100 ml",
+          "priceDelta": 30,
+          "stock": 12
+        }
+      ],
+      "rating": 4.6,
+      "reviewCount": 1,
+      "badges": [
+        "Citrus & Fresh"
+      ],
+      "featured": true,
+      "isNew": false,
+      "bestSeller": false,
+      "soldCount": 250,
+      "active": true
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "orderNumber": "SHR-388487-4A92",
+      "userId": null,
+      "customer": {
+        "name": "End Test",
+        "email": "endtest@example.com",
+        "phone": "5551234"
+      },
+      "delivery": {
+        "country": "USA",
+        "district": "Metro",
+        "city": "Metro City",
+        "address": "1 Test St",
+        "method": "standard"
+      },
+      "payment": {
+        "method": "cod",
+        "status": "pending",
+        "reference": "COD-16750237",
+        "provider": "Cash on Delivery"
+      },
+      "items": [
+        {
+          "productId": 1,
+          "slug": "signature-scent",
+          "name": "Signature Scent",
+          "brand": "Sherriez",
+          "image": "/images/Perfume 1.jpg",
+          "size": "50 ml",
+          "sku": "SIG-50",
+          "unitPrice": 64.99,
+          "quantity": 1
+        }
+      ],
+      "totals": {
+        "subtotal": 64.99,
+        "discount": 0,
+        "delivery": 4.99,
+        "tax": 0,
+        "grandTotal": 69.98,
+        "couponCode": null
+      },
+      "status": "received",
+      "timeline": [
+        {
+          "status": "received",
+          "at": "2026-08-31T16:19:48.487Z"
+        }
+      ],
+      "createdAt": "2026-08-31T16:19:48.487Z"
+    }
+  ],
+  "coupons": [
+    {
+      "id": 1,
+      "code": "WELCOME10",
+      "kind": "percent",
+      "value": 10,
+      "minSubtotal": 0,
+      "active": true,
+      "description": "10% off your order"
+    },
+    {
+      "id": 2,
+      "code": "SCENTS25",
+      "kind": "fixed",
+      "value": 25,
+      "minSubtotal": 120,
+      "active": true,
+      "description": "$25 off orders over $120"
+    },
+    {
+      "id": 3,
+      "code": "FREESHIP",
+      "kind": "free-ship",
+      "value": 0,
+      "minSubtotal": 30,
+      "active": true,
+      "description": "Free standard delivery over $30"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userId": null,
+      "authorName": "Amara O.",
+      "rating": 5,
+      "title": "My everyday luxury",
+      "body": "I get compliments every single time I wear this. The jasmine heart is gorgeous and it lasts on me a good 8 hours.",
+      "verified": true,
+      "createdAt": "2026-06-02T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "productId": 1,
+      "userId": null,
+      "authorName": "Ruth K.",
+      "rating": 4,
+      "title": "Beautiful floral",
+      "body": "Very elegant scent. I wish the 100ml came back in stock more often!",
+      "verified": true,
+      "createdAt": "2026-07-11T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "productId": 2,
+      "userId": null,
+      "authorName": "Daniel M.",
+      "rating": 5,
+      "title": "Worth every cent",
+      "body": "Deep, warm and powerful. My partner and I both use it — perfect unisex amber.",
+      "verified": true,
+      "createdAt": "2026-05-21T10:00:00Z"
+    },
+    {
+      "id": 4,
+      "productId": 3,
+      "userId": null,
+      "authorName": "Kofi A.",
+      "rating": 4,
+      "title": "Clean and fresh",
+      "body": "Great office scent, not overpowering at all.",
+      "verified": false,
+      "createdAt": "2026-08-01T08:15:00Z"
+    },
+    {
+      "id": 5,
+      "productId": 4,
+      "userId": null,
+      "authorName": "Zainab H.",
+      "rating": 5,
+      "title": "Pure magic",
+      "body": "This is my special-occasion perfume now. The plum opening is divine.",
+      "verified": true,
+      "createdAt": "2026-07-19T19:45:00Z"
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "userId": null,
+      "authorName": "Ibrahim S.",
+      "rating": 5,
+      "title": "Real oud quality",
+      "body": "Rich and authentic. One swipe lasts through Jumuah prayers and beyond.",
+      "verified": true,
+      "createdAt": "2026-06-27T12:00:00Z"
+    },
+    {
+      "id": 7,
+      "productId": 9,
+      "userId": null,
+      "authorName": "Marcus T.",
+      "rating": 5,
+      "title": "Evening king",
+      "body": "Spicy, warm, confident. Wearing this to dinners gets questions.",
+      "verified": true,
+      "createdAt": "2026-07-05T18:20:00Z"
+    },
+    {
+      "id": 8,
+      "productId": 12,
+      "userId": null,
+      "authorName": "Leo G.",
+      "rating": 4,
+      "title": "Great gym bag scent",
+      "body": "Fresh and energetic. Good value at the sale price.",
+      "verified": false,
+      "createdAt": "2026-08-10T07:00:00Z"
+    },
+    {
+      "id": 9,
+      "productId": 14,
+      "userId": null,
+      "authorName": "Grace N.",
+      "rating": 5,
+      "title": "Gifted twice already",
+      "body": "The packaging looks expensive and everyone loves the layering combo.",
+      "verified": true,
+      "createdAt": "2026-07-28T16:00:00Z"
+    }
+  ],
+  "banners": [
+    {
+      "id": 1,
+      "eyebrow": "Limited Time",
+      "title": "The Amber Season Sale",
+      "text": "Enjoy up to 25% off selected ambers, ouds and gift sets — while stocks last.",
+      "ctaLabel": "Shop the Sale",
+      "ctaHref": "/shop?sort=discount",
+      "theme": "sale",
+      "active": true
+    },
+    {
+      "id": 2,
+      "eyebrow": "Free Delivery",
+      "title": "Free standard delivery over $75",
+      "text": "Anywhere in the country. Automatic at checkout — no code needed.",
+      "ctaLabel": "Start Shopping",
+      "ctaHref": "/shop",
+      "theme": "new",
+      "active": true
+    },
+    {
+      "id": 3,
+      "eyebrow": "New Collection",
+      "title": "Meet Golden Hour",
+      "text": "Our sunniest composition yet — peach, neroli and tonka in perfect balance.",
+      "ctaLabel": "Discover Now",
+      "ctaHref": "/product/golden-hour",
+      "theme": "gift",
+      "active": true
+    }
+  ],
+  "subscribers": [
+    {
+      "id": 1,
+      "email": "test@example.com",
+      "createdAt": "2026-08-31T16:18:35.877Z"
+    }
+  ],
+  "messages": []
+}

@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { useToast } from './ToastContext';
 
 const WishlistContext = createContext(null);
@@ -23,7 +23,7 @@ export function WishlistProvider({ children }) {
     }
   }, [slugs]);
 
-  function toggle(product) {
+  const toggle = useCallback((product) => {
     setSlugs((prev) => {
       if (prev.includes(product.slug)) {
         toast(`${product.name} removed from wishlist.`, 'info');
@@ -32,9 +32,9 @@ export function WishlistProvider({ children }) {
       toast(`${product.name} saved to your wishlist.`);
       return [...prev, product.slug];
     });
-  }
+  }, [toast]);
 
-  const has = (slug) => slugs.includes(slug);
+  const has = useCallback((slug) => slugs.includes(slug), [slugs]);
 
   return (
     <WishlistContext.Provider value={{ slugs, toggle, has }}>
@@ -68,9 +68,9 @@ export function RecentlyViewedProvider({ children }) {
     }
   }, [slugs]);
 
-  function track(slug) {
+  const track = useCallback((slug) => {
     setSlugs((prev) => [slug, ...prev.filter((s) => s !== slug)].slice(0, 8));
-  }
+  }, []);
 
   return <RecentContext.Provider value={{ slugs, track }}>{children}</RecentContext.Provider>;
 }

@@ -3,8 +3,10 @@
   "private": true,
   "scripts": {
     "dev": "concurrently -n backend,frontend -c magenta,cyan \"npm run start:dev --prefix backend\" \"npm run dev --prefix frontend\"",
-    "build": "npm run build --prefix backend && npm run build --prefix frontend",
-    "start": "npm run start:prod --prefix backend"
+    "build": "npm run build --prefix frontend",
+    "start": "npm run start:prod --prefix backend",
+    "vercel-build": "npm run build --prefix frontend",
+    "deploy": "vercel --prod"
   },
   "devDependencies": {
     "concurrently": "^9.1.0"

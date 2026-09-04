@@ -23,6 +23,7 @@ export default function ProductPage() {
     description: product?.shortDescription,
     jsonLd: product ? { '@context': 'https://schema.org', '@type': 'Product', name: product.name, description: product.shortDescription, brand: { '@type': 'Brand', name: product.brand }, offers: { '@type': 'Offer', price: product.salePrice ?? product.price, priceCurrency: 'USD' } } : null,
   });
+  useReveal();
 
   useEffect(() => {
     setLoading(true);

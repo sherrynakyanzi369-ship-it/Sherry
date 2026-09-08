@@ -166,7 +166,8 @@ interface DbShape {
 }
 export declare class JsonDbService {
     private db;
-    private readonly filePath;
+    private filePath;
+    private writable;
     constructor();
     get data(): DbShape;
     save(): void;

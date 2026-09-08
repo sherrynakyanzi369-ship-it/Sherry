@@ -50,9 +50,21 @@ const crypto = __importStar(require("crypto"));
 let JsonDbService = class JsonDbService {
     db;
     filePath = path.join(process.cwd(), 'data', 'db.json');
+    writable = true;
     constructor() {
-        fs.mkdirSync(path.dirname(this.filePath), { recursive: true });
-        if (fs.existsSync(this.filePath)) {
+        try {
+            fs.mkdirSync(path.dirname(this.filePath), { recursive: true });
+        }
+        catch {
+            this.filePath = path.join('/tmp', 'sherriez', 'db.json');
+            try {
+                fs.mkdirSync(path.dirname(this.filePath), { recursive: true });
+            }
+            catch {
+                this.writable = false;
+            }
+        }
+        if (this.writable && fs.existsSync(this.filePath)) {
             try {
                 this.db = JSON.parse(fs.readFileSync(this.filePath, 'utf8'));
             }
@@ -78,9 +90,16 @@ let JsonDbService = class JsonDbService {
         return this.db;
     }
     save() {
-        const tmp = `${this.filePath}.tmp`;
-        fs.writeFileSync(tmp, JSON.stringify(this.db, null, 2));
-        fs.renameSync(tmp, this.filePath);
+        if (!this.writable)
+            return;
+        try {
+            const tmp = `${this.filePath}.tmp`;
+            fs.writeFileSync(tmp, JSON.stringify(this.db, null, 2));
+            fs.renameSync(tmp, this.filePath);
+        }
+        catch {
+            this.writable = false;
+        }
     }
     nextId(collection) {
         const counters = this.db.meta.counters;
